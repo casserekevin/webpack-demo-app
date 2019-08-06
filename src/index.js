@@ -2,8 +2,8 @@ import { run } from './app/app'
 import { AlertService } from './app/alert.service'
 import { ComponentService } from './app/component.service'
 
-//css
-import "./main.css"
+//scss
+import "./main.scss"
 
 const alertService = new AlertService()
 const componentService = new ComponentService()
