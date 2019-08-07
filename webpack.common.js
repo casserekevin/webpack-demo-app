@@ -11,6 +11,20 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ["style-loader", "css-loader", "sass-loader"] //Order mather 
+            },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
+                test: /\.(svg|png|jpe?g|gif)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[hash].[ext]",
+                        outputPath: "imgs"
+                    }
+                }
             }
         ]
     },
